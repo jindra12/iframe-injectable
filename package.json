@@ -1,0 +1,16 @@
+{
+  "name": "iframe-injectable-dev",
+  "version": "1.0.0",
+  "description": "Developer package for iframe-injectable",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/jindra12/iframe-injectable.git",
+  "author": "Jan Jindráček",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm ./dist/index.js ./dist/index.d.ts; rm -rf ./dist/utils; rm -rf ./dist/iframe; yarn tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {}
+}

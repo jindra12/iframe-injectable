@@ -1,0 +1,15 @@
+{
+  "name": "iframe-injectable",
+  "version": "0.0.1",
+  "description": "Library for iframe style/js/html injection",
+  "main": "index.js",
+  "repository": "https://github.com/jindra12/iframe-injectable.git",
+  "author": "Jan Jindráček",
+  "license": "MIT",
+  "man": ["./README.md"],
+  "keywords": ["iframe", "frame", "no dependency", "dependency",
+  "html", "css", "js", "library",
+  "utility", "injection", "injectable", "util", 
+  "dom", "DOM", "api", "javascript", "cascade", "cascade style sheet",
+  "web", "useful", "load", "loader"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "testproject",
+  "version": "1.0.0",
+  "description": "Test project for iframe-injectable",
+  "author": "Jan Jindráček",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn tsc",
+    "bundle": "yarn build; yarn webpack",
+    "build-project": "cd ..; yarn build",
+    "view": "yarn build-project; yarn --force; yarn bundle; firefox ./public/index.html"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "iframe-injectable": "file:../dist",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
