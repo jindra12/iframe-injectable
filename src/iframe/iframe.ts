@@ -7,7 +7,7 @@ import { InjectableIframe } from "../types";
  */
 export const iframe = (frame: HTMLIFrameElement | string | number): InjectableIframe => {
     const realFrame = typeof frame === 'number'
-        ? document.getElementsByTagName('iframe')[frame]
+        ? document.getElementsByTagName('iframe').item(frame)
         : (
             typeof frame === 'string'
                 ? document.querySelector(frame)
@@ -72,6 +72,13 @@ export const iframe = (frame: HTMLIFrameElement | string | number): InjectableIf
         },
         error: callback => {
             realFrame.addEventListener('error', callback);
+        },
+        test: async () => {
+            try {
+                return Boolean(getDocument(await getLoaded(realFrame)));
+            } catch {
+                return false
+            }
         }
     };
 

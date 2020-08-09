@@ -41,4 +41,9 @@ export interface InjectableIframe {
      * @param callback will be triggered if load of iframe fails. Callback has error event as param
      */
     error: (callback: (e: ErrorEvent) => void) => void;
+
+    /**
+     * Tests whether or not you can access document body of iframe
+     */
+    test: () => Promise<boolean>;
 }

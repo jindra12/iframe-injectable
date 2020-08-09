@@ -1,6 +1,6 @@
 {
   "name": "iframe-injectable",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Library for iframe style/js/html injection",
   "main": "index.js",
   "repository": "https://github.com/jindra12/iframe-injectable.git",
